@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akses Digital ZYY - Top Up & Pembayaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Akses Digital ZYY</h1>
+        <p>Isi Ulang & Pembayaran Cepat, Aman, Otomatis 24 Jam</p>
+        <p class="kontak">WA: 085692174059 | Telegram: @Muziadriyan88</p>
+    </header>
+
+    <main class="container">
+        <section class="kategori">
+            <h2>Layanan Kami</h2>
+            <div class="grid-layanan">
+                <div class="kartu" onclick="pilihLayanan('game')">🎮 Top Up Game</div>
+                <div class="kartu" onclick="pilihLayanan('pulsa')">📶 Pulsa & Data</div>
+                <div class="kartu" onclick="pilihLayanan('ewallet')">💳 E-Wallet</div>
+                <div class="kartu" onclick="pilihLayanan('listrik')">⚡ Token Listrik</div>
+                <div class="kartu" onclick="pilihLayanan('pdam')">💧 PDAM</div>
+                <div class="kartu" onclick="pilihLayanan('tagihan')">📡 Pembayaran Lainnya</div>
+            </div>
+        </section>
+
+        <section class="form-transaksi">
+            <h3>Form Pemesanan</h3>
+            <input type="text" id="idTujuan" placeholder="Masukkan ID / Nomor / No. Pelanggan">
+            <select id="jenisLayanan">
+                <option value="">Pilih Layanan</option>
+                <option value="ml">Mobile Legends</option>
+                <option value="ff">Free Fire</option>
+                <option value="pulsa">Pulsa Reguler</option>
+                <option value="data">Paket Data</option>
+                <option value="dana">DANA</option>
+                <option value="gopay">GoPay</option>
+                <option value="listrik">Token Listrik</option>
+            </select>
+            <select id="nominal">
+                <option value="">Pilih Nominal</option>
+            </select>
+            <button onclick="kirimPesanan()">Proses Sekarang</button>
+            <div id="infoStatus"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Akses Digital ZYY | Mitra Resmi Digiflazz</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
