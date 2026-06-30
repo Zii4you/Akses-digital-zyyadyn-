@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f0f4f8;
+    color: #222;
+}
+.header {
+    background: linear-gradient(135deg, #0066cc, #004c99);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.header .kontak {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.kategori h2 {
+    margin-bottom: 1rem;
+    color: #0066cc;
+}
+.grid-layanan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.kartu {
+    background: white;
+    padding: 1.2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+.kartu:hover {
+    background: #e6f0fa;
+    transform: translateY(-2px);
+}
+.form-transaksi {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.form-transaksi input,
+.form-transaksi select {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.6rem 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+.form-transaksi button {
+    width: 100%;
+    padding: 0.9rem;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+.form-transaksi button:hover {
+    background: #0052a3;
+}
+#infoStatus {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 500;
+}
+footer {
+    text-align: center;
+    padding: 1.2rem;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
